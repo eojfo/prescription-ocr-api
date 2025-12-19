@@ -645,7 +645,7 @@ async def extract_prescription(file: UploadFile = File(...)):
 
     # warnings: keep minimal & useful
     warnings: List[str] = []
-    # (선택) 디버그 경고는 너무 길 수 있어 필요하면 켜기
+    #  디버그 경고는 너무 길 수 있어 필요하면 켜기
     # warnings.extend(ocr_debug)
     warnings.extend(parse_warnings)
 
